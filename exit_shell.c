@@ -3,8 +3,8 @@
 /**
 * exit_shell - exits the shell
 *
-* @shell_data: data relevant (status and args)
-* Return: 0 on success.
+* @shell_data: data
+* Return: 0
 */
 int exit_shell(runtime_data *shell_data)
 {

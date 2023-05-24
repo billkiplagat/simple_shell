@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* get_help - function that retrieves help messages according builtin
-* @shell_data: data structure (args and input)
+* get_help - function that retrieves help messages as per builtin
+* @shell_data: data
 * Return: Return 1
 */
 int get_help(runtime_data *shell_data)

@@ -5,7 +5,7 @@
 *
 * @shell_data: data environ
 *
-* Return: no return
+* Return: void
 */
 void cd_dot(runtime_data *shell_data)
 {
@@ -55,7 +55,7 @@ free(cd_pwd);
 * cd_to - changes to a directory given
 *
 * @shell_data: data relevant
-* Return: no return
+* Return: non
 */
 void cd_to(runtime_data *shell_data)
 {
@@ -85,7 +85,7 @@ chdir(dir);
 * cd_previous - changes to the previous directory
 *
 * @shell_data: data relevant
-* Return: no return
+* Return: non
 */
 void cd_previous(runtime_data *shell_data)
 {
@@ -126,8 +126,8 @@ chdir(p_pwd);
 /**
 * cd_to_home - changes to home directory
 *
-* @shell_data: data relevant (environ)
-* Return: no return
+* @shell_data: data relevant
+* Return: void
 */
 void cd_to_home(runtime_data *shell_data)
 {
@@ -163,8 +163,8 @@ shell_data->status = 0;
 /**
 * cd_shell - changes current directory
 *
-* @shell_data: data relevant
-* Return: 1 on success
+* @shell_data: data
+* Return: 1
 */
 int cd_shell(runtime_data *shell_data)
 {

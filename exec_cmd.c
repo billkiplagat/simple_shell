@@ -4,7 +4,7 @@
 * _cdir - checks ":" if is in the current directory.
 * @path: type char pointer char.
 * @i: type int pointer of index.
-* Return: 1 if the path is searchable in the cd, 0 otherwise.
+* Return: 1 or 0 otherwise.
 */
 int _cdir(char *path, int *i)
 {
@@ -77,7 +77,7 @@ return (NULL);
 * executable - determines if is an executable
 *
 * @shell_data: data structure
-* Return: 0 if is not an executable, other number if it does
+* Return: 0 or 1
 */
 int executable(runtime_data *shell_data)
 {
@@ -118,10 +118,10 @@ return (-1);
 }
 
 /**
-* check_cmd_err - verifies if user has permissions to access
+* check_cmd_err - verifies if user has permissions
 *
 * @dir: destination directory
-* @shell_data: data structure
+* @shell_data: data
 * Return: 1 if there is an error, 0 if not
 */
 int check_cmd_err(char *dir, runtime_data *shell_data)
@@ -157,7 +157,7 @@ return (0);
 /**
 * execute_cmd - executes command lines
 *
-* @shell_data: data relevant (args and input)
+* @shell_data: args and input
 * Return: 1 on success.
 */
 int execute_cmd(runtime_data *shell_data)

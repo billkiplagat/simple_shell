@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* free_data - frees data structure
+* free_data - frees data
 *
-* @shell_data: data structure
+* @shell_data: data
 * Return: no return
 */
 void free_data(runtime_data *shell_data)
@@ -19,7 +19,7 @@ free(shell_data->pid);
 /**
 * set_data - Initialize data structure
 *
-* @shell_data: data structure
+* @shell_data: data
 * @av: argument vector
 * Return: no return
 */

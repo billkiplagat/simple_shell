@@ -2,7 +2,7 @@
 /**
 * execute_line - finds builtins and commands
 *
-* @shell_data: data relevant (args)
+* @shell_data: data
 * Return: 1 on success.
 */
 int execute_line(runtime_data *shell_data)

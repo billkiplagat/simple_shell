@@ -26,7 +26,7 @@ help = "Print the enviroment of the shell.\n";
 write(STDOUT_FILENO, help, str_len(help));
 }
 /**
-* help_general - Entry point for help information for the help builtin
+* help_general - Entry point for help information
 * Return: no return
 */
 void help_general(void)

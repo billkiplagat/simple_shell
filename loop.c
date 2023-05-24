@@ -33,7 +33,7 @@ return (in);
 
 /**
 * loop - Loop of shell
-* @shell_data: data relevant (av, input, args)
+* @shell_data: data
 *
 * Return: no return.
 */

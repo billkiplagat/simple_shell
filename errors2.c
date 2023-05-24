@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* env_err - error message for env in get_env.
-* @shell_data: data relevant (counter, arguments)
+* env_err - error message for env
+* @shell_data: counter, arguments
 * Return: error message.
 */
 char *env_err(runtime_data *shell_data)

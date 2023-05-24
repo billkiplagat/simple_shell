@@ -3,8 +3,8 @@
 /**
 * copy_info - copies info to create
 * a new env or alias
-* @name: name (env or alias)
-* @value: value (env or alias)
+* @name: name env or alias
+* @value: value env or alias
 *
 * Return: new env or alias.
 */
@@ -28,9 +28,9 @@ return (new);
 /**
 * set_env - sets an environment variable
 *
-* @name: name of the environment variable
-* @value: value of the environment variable
-* @shell_data: data structure (environ)
+* @name: name of the environment
+* @value: value of the environment
+* @shell_data: data
 * Return: no return
 */
 void set_env(char *name, char *value, runtime_data *shell_data)
@@ -61,7 +61,7 @@ shell_data->_environ[i + 1] = NULL;
 /**
 * _setenv - compares env variables names
 * with the name passed.
-* @shell_data: data relevant (env name and env value)
+* @shell_data: env name and env value
 *
 * Return: 1 on success.
 */
@@ -80,7 +80,7 @@ return (1);
 /**
 * _unsetenv - deletes a environment variable
 *
-* @shell_data: data relevant (env name)
+* @shell_data: data
 *
 * Return: 1 on success.
 */

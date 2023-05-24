@@ -2,11 +2,11 @@
 
 /**
 * cmp_env_name - compares env variables names
-* with the name passed.
+* with the name provided.
 * @env_name: name of the environment variable
 * @name: name passed
 *
-* Return: 0 if are not equal. Another value if they are.
+* Return: 0 or 1
 */
 int cmp_env_name(const char *env_name, const char *name)
 {

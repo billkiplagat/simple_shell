@@ -2,7 +2,7 @@
 
 /**
 * get_error - calls the error according the builtin, syntax or permission
-* @shell_data: data structure that contains arguments
+* @shell_data: data containing arguments
 * @error_value: error value
 * Return: error
 */

@@ -42,7 +42,7 @@ return (err);
 
 /**
 * get_cd_err - error message for cd command in get_cd
-* @shell_data: data relevant (directory)
+* @shell_data: data
 * Return: Error message
 */
 
@@ -81,8 +81,8 @@ return (err);
 }
 
 /**
-* notfound_err - generic error message for command not found
-* @shell_data: data relevant (counter, arguments)
+* notfound_err - generic error message for commands not found
+* @shell_data: data
 *  Return: Error message
 */
 
@@ -115,7 +115,7 @@ return (err);
 
 /**
 * exit_err - generic error message for exit in get_exit
-* @shell_data: data relevant (counter, arguments)
+* @shell_data: data
 *
 * Return: Error message
 */
