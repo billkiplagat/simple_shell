@@ -55,7 +55,6 @@ perror("Error: Insufficient memory\n");
 return (NULL);
 }
 memset(new_variable, 0, length);
-/*Data in the form: name=val*/
 new_variable = str_cat(new_variable, name);
 new_variable = str_cat(new_variable, "=");
 new_variable = str_cat(new_variable, val);

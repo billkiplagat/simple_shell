@@ -17,14 +17,12 @@ if (_builtins(*token) == 0)
 status = exec_builtin(token);
 return (status);
 }
-
 path = path_builder(token);
 if (path != NULL)
 {
 status = execute2(token, path, args);
 return (status);
 }
-
 pid = fork();
 if (pid == -1)
 {
@@ -33,7 +31,6 @@ return (1);
 }
 if (pid == 0)
 {
-
 if (execve(token[0], token, NULL) == -1)
 {
 error = str_cat(*token, ": No such file or directory\n");
