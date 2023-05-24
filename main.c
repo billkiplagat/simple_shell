@@ -13,7 +13,6 @@ char **token;
 char *line;
 int stat;
 (void)ac;
-
 signal(SIGINT, ctr_lc);
 stat = 0;
 while (stat == 0)
@@ -33,7 +32,6 @@ free(token);
 free(line);
 continue;
 }
-
 if (str_cmp(token[0], "exit") == 0)
 {
 exit_shell(token, line);
