@@ -68,23 +68,22 @@ return (new_variable);
 */
 int unset_env(char *name)
 {
-int i = 0;
-char **temp;
-size_t length;
-
-length = str_len(name);
+int i = 0, j;
+size_t length = strlen(name);
 while (environ[i])
 {
 if (strncmp(environ[i], name, length) == 0)
 {
-temp = environ;
-free(temp[0]);
-do {
-temp[0] = temp[1];
-temp++;
-} while (*temp);
+free(environ[i]);
+for (j = i; environ[j]; j++)
+{
+environ[j] = environ[j + 1];
 }
+}
+else
+{
 i++;
+}
 }
 return (0);
 }
