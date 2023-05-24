@@ -11,11 +11,11 @@ int main(int ac, char *av[])
 {
 char **token;
 char *line;
-int stat;
+int loop_stat = 0;
+
 (void)ac;
 signal(SIGINT, ctr_lc);
-stat = 0;
-while (stat == 0)
+while (loop_stat == 0)
 {
 prompt();
 line = readLine();
@@ -38,10 +38,10 @@ exit_shell(token, line);
 }
 else
 {
-stat =  exe_func(token, av[0]);
+loop_stat =  exe_func(token, av[0]);
 }
 free(line);
 free(token);
 }
-return (stat);
+return (loop_stat);
 }

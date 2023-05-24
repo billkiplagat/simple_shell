@@ -34,8 +34,9 @@ if ((str_cmp(string, "setenv")) == 0)
 return (0);
 if ((str_cmp(string, "unsetenv")) == 0)
 return (0);
+if ((str_cmp(string, "cd")) == 0)
+return (0);
 return (1);
-
 }
 /**
 * exec_builtin - Executes function
@@ -44,6 +45,11 @@ return (1);
 */
 int exec_builtin(char **tokens)
 {
+if ((str_cmp(*tokens, "cd")) == 0)
+{
+int  i = (change_dir(tokens));
+return (0);
+}
 if ((str_cmp(*tokens, "env")) == 0)
 {
 print_env();

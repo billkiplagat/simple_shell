@@ -20,6 +20,7 @@ int unset_env(char *var_name);
 char *str_dup(char *str);
 void _puts(char *str);
 void prompt(void);
+int change_dir(char **argv);
 char *readLine(void);
 int str_len(char *s);
 char *str_cat(char *dest, char *src);
