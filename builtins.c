@@ -45,9 +45,12 @@ return (1);
 */
 int exec_builtin(char **tokens)
 {
+int i;
+
 if ((str_cmp(*tokens, "cd")) == 0)
 {
-int  i = (change_dir(tokens));
+i = (change_dir(tokens));
+(void)i;
 return (0);
 }
 if ((str_cmp(*tokens, "env")) == 0)
