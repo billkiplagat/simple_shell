@@ -24,21 +24,21 @@ To build and run the shell program, follow these steps:
 The shell program supports common shell commands and built-in commands. Here are some examples:
 
 * Execute a command:
- Shell > ls
+ `Shell > ls`
 
 * Change the directory:
-  Shell > cd /path/to/directory
+  `Shell > cd /path/to/directory`
 
 * Set an environment variable:
- Shell > setenv VARIABLE VALUE
+ `Shell > setenv VARIABLE VALUE`
 
 * Unset an environment variable:
-  Shell > unsetenv VARIABLE
+  `Shell > unsetenv VARIABLE`
 
 * Print the current environment:
-  Shell > env
+  `Shell > env`
 * Exit the shell:
-  Shell > exit
+  `Shell > exit`
 
 # Contributing
 Contributions to the project are welcome! If you find any issues or have ideas for improvements, feel free to open an issue or submit a pull request.
